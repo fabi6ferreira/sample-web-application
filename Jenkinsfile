@@ -3,6 +3,9 @@ pipeline{
       agent {
                 any {
                 image 'maven:3-openjdk-11'
+			tools {
+				 maven 'Maven 3.8.6'
+        jdk 'Java 17.0.4.1'}
 
                 }
             }
@@ -29,3 +32,7 @@ pipeline{
 		
             }	       	     	         
 }
+
+
+ maven 'Maven 3.8.6'
+        jdk 'Java 17.0.4.1'
